@@ -2,122 +2,92 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>HTML Academy: Техномарт. Каталог товаров</title>
   </head>
   <body>
     <header>
-
       <ul>
-        <li><a href="bookmark.html">Закладки</a></li>
-        <li><a href="my cart.html">Корзина</a></li>
-        <li><a href="make order.html">Оформить заказ</a></li>
+        <li><a href="">Закладки</a></li>
+        <li><a href="">Корзина</a></li>
+        <li><a href="">Оформить заказ</a></li>
       </ul>
-
       <ul>
-        <li><a href="Log in.html">Войти</a></li>
-        <li><a href="Sing up.html">Регистрация</a></li>
+        <li><a href="">Войти</a></li>
+        <li><a href="">Регистрация</a></li>
       </ul>
-
       <nav>
         <ul>
-          <li><a href="main.html">Главная</a></li>
-          <li><a href="company.html">Компания</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="proposals.html">Спецпредложения</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="">Новости</a></li>
+          <li><a href="">Спецпредложения</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Контакты</a></li>
         </ul>
       </nav>
-
     </header>
-
-
     <main>
-
-      <aside class="Filter back"><!--Слева-->
-        <div class="Filter back">Фильтр:</div>
-
-        <div class="Price">
-          <h3>Цена</h3>
-          <hr/ align="left" width="100">
+      <aside class="filter-box"><!--Слева-->
+        <div class="filter-box_header">Фильтр:</div>
+        <div class="filter-box_input">
+          <h3>Цена</h3>          
         </div>
-
-        <div class="Manufactures">
+        <div class="filter-box_checkbox">
           <h3>Производители</h3>
-          <hr/ align="left" width="100">
         </div>
-
-        <div class="Power">
+        <div class="filter-box_radio">
           <h3>Питание</h3>
         </div>
-
-        <button>Показать</button><!--какой здесь должен быть атрибут?-->
+        <button class="filter-box_btn-ordinary">Показать</button><!--какой здесь должен быть атрибут?-->
       </aside>
-
-      <section class="Sort Back"><!--Карточки товара-->
-        <div class="Sort Back">Сортировка:<div>
-
-        <div class="Products cards"><!--Здесь будет группа карточек-->
-          <div class="product card">
-            <img src="#" alt="Фото перфоратора">
+      <section class="item-cards-box"><!--Карточки товара-->
+        <div class="item-cards-box_header">Сортировка:<div>
+        <div class="item-cards-box_content"><!--Здесь будет группа карточек-->
+          <div class="item-cards-box_content_item-card">
+            <img src="img/item.jpg" width="218" height="170" alt="Фото перфоратора">
             <h3>Перфоратор BOSCH BFG 3000</h3>
-            <button >15500Р.</button><!--какой здесь должен быть атрибут?-->
+            <button class="btn-red-arrow">15500Р.</button><!--какой здесь должен быть атрибут?-->
           </div>
         </div>
-
         <div class="pagination"></div><!--Пока заглушка, т.к надо разбираться-->
       </section>
-
-      <section class="Service back"><!--Секция про "Пара слов о перфораторах"-->
+      <section class="text-selling"><!--Секция про "Пара слов о перфораторах"-->
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
 В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
-
     </main>
-
-
     <footer>
-      
       <dev>
         <img  src="logo" alt="Logo">
-
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
            <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a></p>
-
         <ul>
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="">Компания</a></li>
+          <li><a href="">Новости</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Контакты</a></li>
         </ul>
-
         <ul>
-          <li><a href="materials.html">Материалы</a></li>
-          <li><a href="equipment.html">Техника</a></li>
-          <li><a href="tools.html">Инструмент</a></li>
-          <li><a href="proposals.html">Спецпредложения</a></li>
+          <li><a href="">Материалы</a></li>
+          <li><a href="">Техника</a></li>
+          <li><a href="">Инструмент</a></li>
+          <li><a href="">Спецпредложения</a></li>
         </ul>
       </dev>
-
       <dev>
-        <p>© 2010–2019 Компания «Техномарт»<br>
+        <p>&#169 2010–2019 Компания «Техномарт»<br>
            Все права защищены</p>
-
         <img src="logolink" alt="VK">
         <img src="logolink" alt="F">
         <img src="logolink" alt="Inst">
-
         <p>Обратная связь <br>
         <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-
         <p>Разработано —<br>
         <a href="htmlacademy.ru">htmlacademy.ru</a></p>
       </dev>
     </footer>
-
-
   </body>
   </html>
