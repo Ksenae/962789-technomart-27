@@ -6,26 +6,27 @@
   </head>
   <body>
     <header>      
-        <a href="index.html"><img src="img/logo-technomart.svg" alt="Логотип Техномарта"></a>
+        <a href="/"><img src="img/logo-technomart.svg" alt="Логотип Техномарта"></a>
+        <img src="img/icon-search.svg" alt="">
         <input type="search" name="q" id="search_input" placeholder="Поиск:">             
-        <ul class="header-search_menu">
-          <li class="header-search-menu_item"><a href="">Закладки</a></li>
-          <li class="header-search-menu_item"><a href="">Корзина</a></li>
+        <ul class="header-search-menu">
+          <li class="header-search-menu_item"><img src="img/icon-bookmark.svg" alt=""><a href="">Закладки</a></li>
+          <li class="header-search-menu_item"><img src="img/icon-cart.svg" alt=""><a href="">Корзина</a></li>
           <li class="header-search-menu_item"><a href="">Оформить заказ</a></li>
         </ul>          
         <p><i>Интернет-магазин<br>
            строительных материалов<br>
            и инструментов для ремонта</i></p>      
-        <img src="img/icon-phone.svg">
-        <h3>+7(812)555-05-55</h3>
+        <img src="img/icon-phone.svg" alt="">
+        <a href="tel">+7(812)555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>      
-        <ul class="header-login-buttons_list">
-          <li class="header-login-buttons-list_item"><a href="">Войти</a></li>
-          <li class="header-login-buttons-list_item"><a href="">Регистрация</a></li>
+        <ul class="header-login-buttons">
+          <li class="header-login-buttons_item"><a href=""><img src="img/icon-login.svg" alt="">Войти</a></li>
+          <li class="header-login-buttons_item"><a href="">Регистрация</a></li>
         </ul>       
       <nav>
       <ul>
-        <li><a href="index.html">Главная</a></li>
+        <li><a href="/">Главная</a></li>
         <li><a href="">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="">Новости</a></li>
@@ -36,128 +37,74 @@
       </nav>
     </header>
     <main>
-      <ul class="breadcrumb">
-        <li><a href="index.html"><img src="img/icon-home.svg"></a></li>
+      <ul class="breadcrumbs">
+        <li><a href="/"><img src="img/icon-home.svg"></a></li>
         <li><a href="catalog.html">Каталог</a>
         <li><a href="">Инструмент</a>
-        <li><a href="">Перфоратор</a>
+        <li><span>Перфоратор</span></li>
       </ul>
       <h2>Перфораторы</h2>
-      <aside class="filter-box">
-        <div class="filter-box_header">Фильтр:</div>
-        <div class="filter-box_input">
-          <h3>Цена</h3>          
-        </div>
-        <div class="filter-box_checkbox">
-          <h3>Производители</h3>
-        </div>
-        <div class="filter-box_radio">
-          <h3>Питание</h3>
-        </div>
-        <button class="filter-box_btn-ordinary">Показать</button>
+      <aside class="filter-box">        
+        <form class="filter-box">
+          <fieldset class="filter-items">
+          <legend>Цена:</legend>
+          <ul>
+            <li>
+              <input type="range" id="range">
+              <label for="range" class="visually.hidden">Выберите диапазон</label>
+            </li>
+            <!--группа инпутов для цены-->
+          </ul>          
+          </fieldset>
+          <fieldset class="filter-items">
+            <legend>Производители</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="BOSCH" id="BOSCH" checked>
+                <label for="BOSCH">BOSCH</label>
+              </li>
+              <li>
+                <input type="checkbox" name="INTERSKOL" id="INTERSKOL">
+                <label for="INTERSKOL">ИНТЕРСКОЛ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="MAKITA" id="MAKITA" checked>
+                <label for="MAKITA">MAKITA</label>
+              </li>
+              <li>
+                <input type="checkbox" name="DEWALT" id="DEWALT">
+                <label for="DEWALT">DEWALT</label>
+              </li>
+              <li>
+                <input type="checkbox" name="HITACHI" id="HITACHI">
+                <label for="HITACHI">HITACHI</label>
+              </li>     
+          </fieldset>
+          <fieldset class="filter-items">
+            <legend>Питание</legend>
+            <ul>
+              <li>
+                <input type="radio" name="accumulator" id="accumulator" checked>
+                <label for="accumulator">АККУМУЛЯТОРНЫЕ</label>
+              </li>
+              <li>
+                <input type="radio" name="electrician" id="electrician">
+                <label for="electrician">СЕТЕВЫЕ</label>
+              </li>
+          </fieldset>
+          <button class="btn-white" type="submit">Показать</button>
+        </form>        
       </aside>
-      <section class="item-cards-box">
-        <form class="modal" hidden>
-          <button><img src="img/icon-close.svg"></button>
-          <img src="img/icon-mark.svg">
-          <h2>Товар добавлен в корзину!</h2>
-          <button class="action-btn-red" type="submit">Оформить заказ</button>
-          <button class="action-btn-white" type="submit">Продолжить покупки</button>
-        </form>
+      <section class="item-cards-box">        
         <div class="item-cards-box_header"></div>
         <div class="item-cards-box_content">
-          <ul item-cards_group>
-            <li item-card>
-              <div class="hovered-image" hidden>
-                <button class="action-btn-green-primary" type="submit"><img src="img/icon-cart">Купить</button>
-                <button class="action-btn-green-second" type="submit">В закладки</button>
-              </div>
+          <div class="item-card">                          
               <img src="img/item.jpg" width="218" height="170" alt="Изумрудный перфоратор с красными кнопками">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <h3><s>22500P.</s></h3>
-              <button type="submit"class="btn-red-arrow">15500Р.</button>
-            </li>
-            <li item-card>
-              <div class="hovered-image" hidden>
-                <button class="action-btn-green-primary" type="submit"><img src="img/icon-cart">Купить</button>
-                <button class="action-btn-green-second" type="submit">В закладки</button>
-              </div>
-              <img src="img/item.jpg" width="218" height="170" alt="Изумрудный перфоратор с красными кнопками">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <h3><s>30500P.</s></h3>
-              <button type="submit"class="btn-red-arrow">25500Р.</button>
-            </li>
-            <li item-card>
-              <div class="hovered-image">
-                <button class="action-btn-green-primary" type="submit"><img src="img/icon-cart.svg">Купить</button>
-                <button class="action-btn-green-second" type="submit">В закладки</button>
-              </div>
-              <img src="img/item.jpg" width="218" height="170" alt="Изумрудный перфоратор с красными кнопками" hidden>
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <h3><s>22500P.</s></h3>
-              <button type="submit"class="btn-red-arrow">15500Р.</button>
-            </li>
-            <li item-card>
-              <div class="hovered-image" hidden>
-                <button class="action-btn-green-primary" type="submit"><img src="img/icon-cart">Купить</button>
-                <button class="action-btn-green-second" type="submit">В закладки</button>
-              </div>
-              <img src="img/item.jpg" width="218" height="170" alt="Изумрудный перфоратор с красными кнопками">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <h3><s>22500P.</s></h3>
-              <button type="submit"class="btn-red-arrow">15500Р.</button>
-            </li>
-            <li item-card>
-              <div class="hovered-image" hidden>
-                <button class="action-btn-green-primary" type="submit"><img src="img/icon-cart">Купить</button>
-                <button class="action-btn-green-second" type="submit">В закладки</button>
-              </div>
-              <img src="img/item.jpg" width="218" height="170" alt="Изумрудный перфоратор с красными кнопками">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <h3><s>30500P.</s></h3>
-              <button type="submit"class="btn-red-arrow">25500Р.</button>
-            </li>
-            <li item-card>
-              <div class="hovered-image" hidden>
-                <button class="action-btn-green-primary" type="submit"><img src="img/icon-cart">Купить</button>
-                <button class="action-btn-green-second" type="submit">В закладки</button>
-              </div>
-              <img src="img/item.jpg" width="218" height="170" alt="Изумрудный перфоратор с красными кнопками">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <h3 hidden><s>22500P.</s></h3>
-              <button type="submit"class="btn-red-arrow">12500Р.</button>
-            </li>
-            <li item-card>
-              <div class="hovered-image" hidden>
-                <button class="action-btn-green-primary" type="submit"><img src="img/icon-cart">Купить</button>
-                <button class="action-btn-green-second" type="submit">В закладки</button>
-              </div>
-              <img src="img/item.jpg" width="218" height="170" alt="Изумрудный перфоратор с красными кнопками">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <h3><s>22500P.</s></h3>
-              <button type="submit"class="btn-red-arrow">15500Р.</button>
-            </li>
-            <li item-card>
-              <div class="hovered-image" hidden>
-                <button class="action-btn-green-primary" type="submit"><img src="img/icon-cart">Купить</button>
-                <button class="action-btn-green-second" type="submit">В закладки</button>
-              </div>
-              <img src="img/item.jpg" width="218" height="170" alt="Изумрудный перфоратор с красными кнопками">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <h3><s>30500P.</s></h3>
-              <button type="submit"class="btn-red-arrow">25500Р.</button>
-            </li>
-            <li item-card>
-              <div class="hovered-image" hidden>
-                <button class="action-btn-green-primary" type="submit"><img src="img/icon-cart">Купить</button>
-                <button class="action-btn-green-second" type="submit">В закладки</button>
-              </div>
-              <img src="img/item.jpg" width="218" height="170" alt="Изумрудный перфоратор с красными кнопками">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <h3 hidden=""><s>22500P.</s></h3>
-              <button type="submit"class="btn-red-arrow">12500Р.</button>
-            </li>             
-          </ul>          
+              <span class="card-text">Перфоратор BOSCH BFG 3000</span>
+              <span class="card-text__crossed-out">22500P.</span>
+              <span class="btn-red-arrow">15500 P.</span>                                  
+              </div>               
+          </div>                       
         </div>
         <div class="pagination"></div><!--ul?-->
       </section>
@@ -187,12 +134,12 @@
         </ul>
         </div>
         <div class="footer-dark-blue">
-        <p>© 2010–2019 Компания «Техномарт»<br>
+        <p>&#169;2010–2019 Компания «Техномарт»<br>
            Все права защищены</p>
         <ul class="social_media">
-          <li><a class="social_media_link" href="" title="Вконтакте">VK</a></li>
-          <li><a class="social_media_link" href="" title="Facebook">F</a></li>
-          <li><a class="social_media_link" href="" title="Instagram">Inst</a></li>
+          <li><a class="social_media_link" href="" title="Наша группа Вконтакте" aria-label="Вконтакте">VK</a></li>
+          <li><a class="social_media_link" href="" title="Давайте дружить в Facebook" aria-label="Фэйсбук">F</a></li>
+          <li><a class="social_media_link" href="" title="Подписывайтесь на нас в Instagram" aria-label="Инстаграм">Inst</a></li>
         </ul>          
         <p>Обратная связь <br>
         <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
@@ -200,5 +147,12 @@
         <a href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
         </div>
     </footer>
+        <form class="modal">
+          <button class="modal-close" type="button"><img src="img/icon-close.svg" alt=""></button>
+          <img src="img/icon-mark.svg" alt="">
+          <span class="modal-title">Товар добавлен в корзину!</span>
+          <button class="action-btn-red" type="submit">Оформить заказ</button>
+          <button class="action-btn-white" type="submit">Продолжить покупки</button>
+        </form>
   </body>
   </html>
