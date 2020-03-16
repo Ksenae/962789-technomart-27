@@ -818,7 +818,7 @@ button.items__forward {
 }
 
 .main-section__content {
-	width: 100%;
+	width: 240px;
 	display: flex;
 	margin-top: 20px;
 }
@@ -1400,10 +1400,11 @@ li.footer-nav__item:last-child {
 
 .item-cards-box {
 	width: 700px;
+	margin-top: 20px;
 }
 
 .item-cards-box__header {
-	width: 100%;
+	width: 682px;
 	height: 38px;
 	background-color: #f7f3ec;
 	display: flex;
