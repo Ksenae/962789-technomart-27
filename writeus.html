@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <form class="modal">
+      <button class="modal-close" type="button"><img src="img/icon-close.svg" alt="Кнопка закрыть" width="21" height="21"></button>
+      <div class="user-inputs">
+        <fieldset class="user-contacts two-inputs">
+            <legend class="visually-hidden">Данные клиента</legend>
+              <div class="label-content">
+                  <label class="label-name" for="name">Ваше имя:</label>
+                  <input class="input-style" type="text" id="name" placeholder="Имя Фамилия">
+              </div>
+              <div class="label-content">
+                  <label class="label-name" for="email">Ваше e-mail:</label>
+                  <input class="input-style" type="text" id="email" placeholder="email@example.com">  
+              </div>                         
+          </fieldset>       
+          <fieldset class="user-letter one-input">
+              <legend class="visually-hidden">Сообщение пользователя</legend>
+              <div class="label-content">
+                <label class="label-name" for="letter">Текст письма:</label>
+                <textarea class="input-style" rows="6" id="letter" placeholder="В свободной форме"></textarea>  
+              </div>           
+          </fieldset>
+      </div>
+      <div class="form-button">
+        <button class="form-button-style" type="submit">Отправить</button>  
+      </div>      
+    </form> 
+  </body>
+</html>
